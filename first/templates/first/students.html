@@ -2,18 +2,16 @@
     <thead>
         <tr>
             <th>이름</th>
-            <th>수학</th>
-            <th>영어</th>
-            <th>과학</th>
+            <th>주소</th>
+            <th>이메일</th>
         </tr>
     </thead>
     <tbody>
     {% for student in students %}
         <tr>
             <td>{{ student.name }}</td>
-            <td>{{ student.math }}</td>
-            <td>{{ student.english }}</td>
-            <td>{{ student.science }}</td>
+            <td>{{ student.address }}</td>
+            <td>{{ student.email }}</td>
         </tr>
     {% endfor %}
     </tbody>
