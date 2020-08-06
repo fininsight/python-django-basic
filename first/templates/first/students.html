@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>이름</th>
+            <th>수학</th>
+            <th>영어</th>
+            <th>과학</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.math }}</td>
+            <td>{{ student.english }}</td>
+            <td>{{ student.science }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
